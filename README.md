@@ -1,1 +1,1 @@
-# kubernetes_py3_master_image
+# kubernetes_py2_master_image
