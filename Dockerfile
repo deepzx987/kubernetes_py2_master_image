@@ -5,7 +5,9 @@
 #
 # The line below states we will base our new image on the Latest Official Ubuntu 
 # Remove py3 for python 2 image
-FROM tensorflow/tensorflow:latest-gpu
+
+FROM tensorflow/tensorflow:latest-1.9.0-gpu
+
 #ENV http_proxy http://172.16.117.121:3128
 #ENV https_proxy http://172.16.117.121:3128
 
@@ -21,7 +23,7 @@ RUN apt-get update
 #
 RUN apt-get install -y wget vim htop fish datamash
 
-RUN pip --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD 
+RUN pip --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD
 
 RUN pip --no-cache-dir install tqdm keras matplotlib librosa scikit-learn python_speech_features
 
