@@ -25,7 +25,7 @@ RUN apt-get install -y wget vim htop fish datamash
 
 RUN pip --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD
 
-RUN pip --no-cache-dir install tqdm keras matplotlib librosa scikit-learn python_speech_features
+RUN pip --no-cache-dir install tqdm keras==2.2.0 matplotlib librosa scikit-learn python_speech_features
 
 RUN pip --no-cache-dir install dill bleach namedtupled wfdb h5py ipython 
 
