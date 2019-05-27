@@ -21,9 +21,9 @@ LABEL description="Tensorflow + some other libraries"
 RUN apt-get update
 
 #
-RUN apt-get install -y wget vim htop fish datamash
+RUN apt-get install -y wget vim htop fish datamash 
 
-RUN pip --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD
+RUN pip --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD obspy
 
 RUN pip --no-cache-dir install tqdm keras==2.2.0 matplotlib librosa scikit-learn python_speech_features
 
